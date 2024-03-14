@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleni Tokmaktsi</title>
+
+    <link rel="icon" href="./assets/yelp.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Serif+KR&family=Noto+Serif+Telugu:wght@100..900&family=Poppins:wght@100;200;400&family=Trirong:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100&family=Noto+Serif+KR&family=Noto+Serif+Telugu:wght@100..900&family=Poppins:wght@100;200;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Trirong:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-0" aria-label="Fifth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(4, 60, 117)" class="bi bi-yelp" viewBox="0 0 16 16">
+  <path d="m4.188 10.095.736-.17.073-.02A.813.813 0 0 0 5.45 8.65a1 1 0 0 0-.3-.258 3 3 0 0 0-.428-.198l-.808-.295a76 76 0 0 0-1.364-.493C2.253 7.3 2 7.208 1.783 7.14c-.041-.013-.087-.025-.124-.038a2.1 2.1 0 0 0-.606-.116.72.72 0 0 0-.572.245 2 2 0 0 0-.105.132 1.6 1.6 0 0 0-.155.309c-.15.443-.225.908-.22 1.376.002.423.013.966.246 1.334a.8.8 0 0 0 .22.24c.166.114.333.129.507.141.26.019.513-.045.764-.103l2.447-.566zm8.219-3.911a4.2 4.2 0 0 0-.8-1.14 1.6 1.6 0 0 0-.275-.21 2 2 0 0 0-.15-.073.72.72 0 0 0-.621.031c-.142.07-.294.182-.496.37-.028.028-.063.06-.094.089-.167.156-.353.35-.574.575q-.51.516-1.01 1.042l-.598.62a3 3 0 0 0-.298.365 1 1 0 0 0-.157.364.8.8 0 0 0 .007.301q0 .007.003.013a.81.81 0 0 0 .945.616l.074-.014 3.185-.736c.251-.058.506-.112.732-.242.151-.088.295-.175.394-.35a.8.8 0 0 0 .093-.313c.05-.434-.178-.927-.36-1.308M6.706 7.523c.23-.29.23-.722.25-1.075.07-1.181.143-2.362.201-3.543.022-.448.07-.89.044-1.34-.022-.372-.025-.799-.26-1.104C6.528-.077 5.644-.033 5.04.05q-.278.038-.553.104a8 8 0 0 0-.543.149c-.58.19-1.393.537-1.53 1.204-.078.377.106.763.249 1.107.173.417.41.792.625 1.185.57 1.036 1.15 2.066 1.728 3.097.172.308.36.697.695.857q.033.015.068.025c.15.057.313.068.469.032l.028-.007a.8.8 0 0 0 .377-.226zm-.276 3.161a.74.74 0 0 0-.923-.234 1 1 0 0 0-.145.09 2 2 0 0 0-.346.354c-.026.033-.05.077-.08.104l-.512.705q-.435.591-.861 1.193c-.185.26-.346.479-.472.673l-.072.11c-.152.235-.238.406-.282.559a.7.7 0 0 0-.03.314c.013.11.05.217.108.312q.046.07.1.138a1.6 1.6 0 0 0 .257.237 4.5 4.5 0 0 0 2.196.76 1.6 1.6 0 0 0 .349-.027 2 2 0 0 0 .163-.048.8.8 0 0 0 .278-.178.7.7 0 0 0 .17-.266c.059-.147.098-.335.123-.613l.012-.13c.02-.231.03-.502.045-.821q.037-.735.06-1.469l.033-.87a2.1 2.1 0 0 0-.055-.623 1 1 0 0 0-.117-.27Zm5.783 1.362a2.2 2.2 0 0 0-.498-.378l-.112-.067c-.199-.12-.438-.246-.719-.398q-.644-.353-1.295-.695l-.767-.407c-.04-.012-.08-.04-.118-.059a2 2 0 0 0-.466-.166 1 1 0 0 0-.17-.018.74.74 0 0 0-.725.616 1 1 0 0 0 .01.293c.038.204.13.406.224.583l.41.768q.341.65.696 1.294c.152.28.28.52.398.719q.036.057.068.112c.145.239.261.39.379.497a.73.73 0 0 0 .596.201 2 2 0 0 0 .168-.029 1.6 1.6 0 0 0 .325-.129 4 4 0 0 0 .855-.64c.306-.3.577-.63.788-1.006q.045-.08.076-.165a2 2 0 0 0 .051-.161q.019-.083.029-.168a.8.8 0 0 0-.038-.327.7.7 0 0 0-.165-.27"/>
+</svg></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#AboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#featured-3">My achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#projects">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#footer">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid p-4 p-md-5 mb-4 mt-2">
+  <div class="section" id="AboutMe">
+  <div class="mb-2 mt-3 text-body-emphasis">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4">Hi, Welcome!</h1>
+      <p class="lead my-3">Hey visitor! Welcome to my personal site. This is Eleni, a geology enthusiast with a twist of tech-savviness.
+        I started off by studying Geology at the University of Patras, then went on to get a Master's in Applied Geophysics. Along the way, I discovered my love for tools like MATLAB and Python, which I use to solve all sorts of cool problems during my studies. After a stint as a junior geophysicist, I switched gears and became an IT manager, focusing mainly on geoinformatics. Lately, I've been diving into web programming, because I just can't get enough of learning new things.
+      
+      </p>
+     
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div class="container-fluid  p-4 pe-md-5 ps-md-5 mb-2 mt-2" id="featured-3">
+  <h2 class="pb-2 border-bottom">My Achievements <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+  <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/>
+  <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/>
+  <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+</svg></h2>
+  <div class="row g-5 pt-5 pb-1 row-cols-1 row-cols-md-3 row-cols-lg-3">
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#68119e" class="bi bi-mortarboard" viewBox="0 0 16 16">
+          <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+          <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+        
+        </svg>
+        
+      </div>
+	  
+      <h3 class="fs-2" id="studies">My studies</h3>
+      <p>I studied Geology for four years and I have a Master degree in Applied Geophysics. Check some publications that I have accomplished during my studies</p>
+</div>
+	
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#68119e" class="bi bi-suitcase-lg" viewBox="0 0 16 16">
+          <path d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z"/>
+        </svg>
+      </div>
+      <h3 class="fs-2">My job</h3>
+      <p>I made my dream come true. I combined geology and technology. Now work on geoinformatics and I keep on going. Check my so far short journey
+      </p>
+
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#68119e" class="bi bi-yelp" viewBox="0 0 16 16">
+          <path d="m4.188 10.095.736-.17.073-.02A.813.813 0 0 0 5.45 8.65a1 1 0 0 0-.3-.258 3 3 0 0 0-.428-.198l-.808-.295a76 76 0 0 0-1.364-.493C2.253 7.3 2 7.208 1.783 7.14c-.041-.013-.087-.025-.124-.038a2.1 2.1 0 0 0-.606-.116.72.72 0 0 0-.572.245 2 2 0 0 0-.105.132 1.6 1.6 0 0 0-.155.309c-.15.443-.225.908-.22 1.376.002.423.013.966.246 1.334a.8.8 0 0 0 .22.24c.166.114.333.129.507.141.26.019.513-.045.764-.103l2.447-.566zm8.219-3.911a4.2 4.2 0 0 0-.8-1.14 1.6 1.6 0 0 0-.275-.21 2 2 0 0 0-.15-.073.72.72 0 0 0-.621.031c-.142.07-.294.182-.496.37-.028.028-.063.06-.094.089-.167.156-.353.35-.574.575q-.51.516-1.01 1.042l-.598.62a3 3 0 0 0-.298.365 1 1 0 0 0-.157.364.8.8 0 0 0 .007.301q0 .007.003.013a.81.81 0 0 0 .945.616l.074-.014 3.185-.736c.251-.058.506-.112.732-.242.151-.088.295-.175.394-.35a.8.8 0 0 0 .093-.313c.05-.434-.178-.927-.36-1.308M6.706 7.523c.23-.29.23-.722.25-1.075.07-1.181.143-2.362.201-3.543.022-.448.07-.89.044-1.34-.022-.372-.025-.799-.26-1.104C6.528-.077 5.644-.033 5.04.05q-.278.038-.553.104a8 8 0 0 0-.543.149c-.58.19-1.393.537-1.53 1.204-.078.377.106.763.249 1.107.173.417.41.792.625 1.185.57 1.036 1.15 2.066 1.728 3.097.172.308.36.697.695.857q.033.015.068.025c.15.057.313.068.469.032l.028-.007a.8.8 0 0 0 .377-.226zm-.276 3.161a.74.74 0 0 0-.923-.234 1 1 0 0 0-.145.09 2 2 0 0 0-.346.354c-.026.033-.05.077-.08.104l-.512.705q-.435.591-.861 1.193c-.185.26-.346.479-.472.673l-.072.11c-.152.235-.238.406-.282.559a.7.7 0 0 0-.03.314c.013.11.05.217.108.312q.046.07.1.138a1.6 1.6 0 0 0 .257.237 4.5 4.5 0 0 0 2.196.76 1.6 1.6 0 0 0 .349-.027 2 2 0 0 0 .163-.048.8.8 0 0 0 .278-.178.7.7 0 0 0 .17-.266c.059-.147.098-.335.123-.613l.012-.13c.02-.231.03-.502.045-.821q.037-.735.06-1.469l.033-.87a2.1 2.1 0 0 0-.055-.623 1 1 0 0 0-.117-.27Zm5.783 1.362a2.2 2.2 0 0 0-.498-.378l-.112-.067c-.199-.12-.438-.246-.719-.398q-.644-.353-1.295-.695l-.767-.407c-.04-.012-.08-.04-.118-.059a2 2 0 0 0-.466-.166 1 1 0 0 0-.17-.018.74.74 0 0 0-.725.616 1 1 0 0 0 .01.293c.038.204.13.406.224.583l.41.768q.341.65.696 1.294c.152.28.28.52.398.719q.036.057.068.112c.145.239.261.39.379.497a.73.73 0 0 0 .596.201 2 2 0 0 0 .168-.029 1.6 1.6 0 0 0 .325-.129 4 4 0 0 0 .855-.64c.306-.3.577-.63.788-1.006q.045-.08.076-.165a2 2 0 0 0 .051-.161q.019-.083.029-.168a.8.8 0 0 0-.038-.327.7.7 0 0 0-.165-.27"/>
+        </svg>
+      </div>
+      <h3 class="fs-2">My projects</h3>
+      <p>My new "hobby" is web developement. Check my projects below. There are more to come...Check some other skills below! </p>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="container-fluid  p-1 pe-md-5 ps-md-5 mb-2 mt-2" id="featured-3">
+  <div class="row g-5 pt-1 pb-1 row-cols-1 row-cols-md-3 row-cols-lg-3 pb-md-4">
+    <div class="feature col">
+      <img src="./assets/hand-point-down-1.svg" alt="hand image" height="80">
+    </div>
+    <div class="feature col">
+      <img src="./assets/hand-point-down-1.svg" alt="hand image" height="80">
+    </div>
+    <div class="feature col">
+      <img src="./assets/hand-point-down-1.svg" alt="hand image" height="80">
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class="container-fluid  p-1 pe-md-5 ps-md-5 mb-2 mt-2" id="featured-3">
+  <div class="row g-5 pt-1 pb-1 row-cols-1 row-cols-md-3 row-cols-lg-3">
+    <div class="feature col">
+              <ul class="list-group">
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nsg.12292"  style="text-decoration: none !important;"><li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(165, 165, 165) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-paperclip" style="padding:10px;"></i>
+            "Studying GPR's direct and reflected waves (2024)"           
+          </li>
+          </a>
+
+          <a href="http://geolib.geo.auth.gr/index.php/grelit/article/view/12676"  style="text-decoration: none !important;"><li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(0, 0, 0) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-paperclip" style="padding:10px;"></i>
+            My master Thesis: "Ground Penetrating Radar (GPR) direct wave study" (2021)          
+          </li>
+          </a>
+		  
+           <a href="https://ieeexplore.ieee.org/abstract/document/9843178"  style="text-decoration: none !important;"><li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(165, 165, 165) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-paperclip" style="padding:10px;"></i>
+            "A study of the GPR's direct wave (2021)"
+          </li>
+          </a>
+
+          <a href="http://etdedata.gein.noa.gr/PROCEEDINGS_15th_CONGRESS_GSG_2019/T1S1.Updating%20Paleontology%20and%20Stratigraphy%20in%20Greece%20and%20Eastern%20Mediterranean/GSG_2019_paper_294.pdf"  style="text-decoration: none !important;"><li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(0, 0, 0) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-paperclip" style="padding:10px;"></i>
+            "The flora of NW Peloponnese during the Middle Pleistocene (Vigla Sychainon, Rio-Antirio Basin)-Preliminary results (2019)"           
+          </li>
+          </a>
+		  
+
+        </ul>
+	  
+	  
+    </div>
+    <div class="feature col">
+              <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(165, 165, 165) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-briefcase" style="padding:10px;"></i>
+            IT Manager (2023-Present)           
+          </li>
+          
+
+          <li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(0, 0, 0) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-briefcase" style="padding:10px;"></i>
+            Junior Scientific Staff in Research Project: "Geophysical investigations at the wind farm of Mytaras" (04/02/2022-04/05/2022)
+          </li>
+         
+		  
+           <li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(165, 165, 165) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-briefcase" style="padding:10px;"></i>
+            Junior Scientific Staff in Research Project: " Geophysical survey for the detection of groundwater at the mountainous zone of Filippous" (19/02/2020-16/03/2020)
+          </li>
+          
+
+          <li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(0, 0, 0) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-briefcase" style="padding:10px;"></i>
+            Junior Scientific Staff in Research Project: “Detection and mapping of underground pipe networks by using the GPR method” (01/12/2020 - 14/12/2020)
+          </li>
+          
+        </ul>
+	  
+	  
+    </div>
+    <div class="feature col">
+              <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(0, 0, 0) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-trophy" style="padding:10px;"></i>
+            Programming skills: Matlab, Python, HTML, CSS
+          </li>
+        
+
+          <li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(165, 165, 165) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-trophy" style="padding:10px;"></i>
+            Geophysical Software: EKKO_project, gprMax, DC_2DPRO, Prosys ll, RES2DINV, IPI2win
+          </li>
+         
+		  
+          <li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(0, 0, 0) !important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-trophy" style="padding:10px;"></i>
+            Other Software: QGIS, ArcGIS, Google Earth, GeoSetter, Surfer
+          </li>
+         
+
+          <li class="list-group-item d-flex align-items-center" style="padding-left:0%;border-color: rgb(165, 165, 165)!important; border-radius:10px !important;font-style: italic;"><i class="fa-solid fa-trophy" style="padding:10px;"></i>
+            Languages: English (C2), German (B1), Greek (native speaker)
+          </li>
+          
+        </ul>
+	  
+	  
+	  
+    </div>
+
+</div>
+</div>
+
+
+<div class="container-fluid  p-4 p-md-5 mb-4 mt-2" id="projects">
+  <h2 class="pb-2 border-bottom">My Projects <i class="fa-solid fa-flask-vial"></i></h2>
+  <div class="row g-4 py-1 row-cols-1 row-cols-lg-3">
+
+
+  <div class="col-md-3">
+    <div class="card mb-4 box-shadow">
+      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 380px; width: 100%; display: block;" src="./assets/website.jpg" data-holder-rendered="true">
+      <div class="card-body">
+        <h5 class="card-title">Web Design Project</h5>
+        <p class="card-text">As part of a Web Development course I'm taking on Udemy I built a website for a company which designs websites. It looks great in mobile too! <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=ST15MT31224">Check the course to find more!</a></p>
+        
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+        <div class="col-md-3">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 380px; width: 100%; display: block;" src="./assets/dog.jpeg" data-holder-rendered="true">
+            <div class="card-body">
+              <h5 class="card-title">The TinDog Project</h5>
+              <p class="card-text">As part of a Web Development course I'm taking on Udemy I built TinDog where all dogs can find their match. It looks great in mobile too! <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=ST15MT31224">Check the course to find more!</a></p>
+              
+   
+            </div>
+          </div>
+        </div>
+ 
+
+
+       
+        
+        <div class="col-md-3">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 380px; width: 100%; display: block;" src="./assets/original.jpeg" data-holder-rendered="true">
+            <div class="card-body">
+              <h5 class="card-title">Website "INFOROAD"</h5>
+              <p class="card-text">I designed a Website for a reaserch project. It looks great in mobile too! I used only css and HTML without any external library! The website serves an informative purpose and was created as part of the project's outreach efforts.</p>
+   
+            </div>
+          </div>
+        </div>
+ 
+
+
+
+
+
+
+        </div>
+
+        </div>
+
+
+<div class="container-fluid ps-4 pe-4">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 my-md-sm-0 border-top" id="footer">
+    <p class="col-md-2 mb-0 text-body-secondary">© <script>document.write(new Date().getFullYear())</script> Eleni Tokmaktsi</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav col-md-5 justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link px-2 text-body-secondary" aria-current="page" href="#AboutMe">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-2 text-body-secondary" aria-current="page" href="#featured-3">My achievements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-2 text-body-secondary" aria-current="page" href="#projects">My Projects</a>
+      </li>
+      
+    </ul>
+  </footer>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
